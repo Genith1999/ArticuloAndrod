@@ -1,0 +1,58 @@
+\subsection{Tablas}
+
+Las tablas sirven para organizar información que se puede categorizar. El uso de tablas permite la rápida identificación de información concreta, lo que permite al lector comprender lo que se reporta.
+
+\begin{table}[!htbp]
+\caption{Prefijos para múltiplos y submúltiplos de unidades básicas del sistema internacional}\label{tabla1}
+\begin{center}
+    \begin{tabular}{|c|r|}
+    \hline
+     Múltiplo & Prefijo \\\hline
+     $10^{12}$ & tera, T\\\hline
+     $10^{9}$ & giga, G\\\hline
+     $10^{6}$ & mega, M\\\hline
+     $10^{3}$ & kilo, k\\\hline
+     $10^{2}$ & hecto, h\\\hline
+     $10^{1}$ & deka, da\\\hline
+     $10^{-1}$ & deci, d\\\hline
+     $10^{-2}$ & centi, c\\\hline
+     $10^{-3}$ & mili, m\\\hline
+     $10^{-6}$ & micro, $\mu$\\\hline
+     $10^{-9}$ & nano, n\\\hline
+     $10^{-12}$ & pico, p\\\hline
+    \end{tabular}
+\end{center}
+\end{table}
+
+Al igual que las figuras, las tablas deben enumerarse, y en caso de que existan varias debe incluirse un apartado en el índice para enumerarlas. Por otra parte, la explicación de la tabla debe darse en el texto, esta depende del contenido de la tabla. Por ejemplo,\emph{ en la tabla \ref{tabla1} se muestran los diferentes múltiplos y submúltiplos que se utilizan en el sistema internacional de medidas}. Por otra parte, puede que sea necesaria una explicación detallada de la tabla para su mayor entendimiento, por ejemplo, \emph{en la tabla \ref{tabla2} se muestra el aprendizaje de la función lógica OR mediente el uso de un perceptrón simple. La primera columna corresponde a las épocas, la segunda a los periodos, las columnas 3 y 4 ($x_1$ y $x_2$) corresponden a las entradas al perceptrón,$S^P$ corresponde a la salida del perceptrón antes de la función de activación, $h^P$ corresponde a la salida del perceptrón de acuerdo a la función de activación previamente definida, $y^P$ corresponde a la salida deseada, $e^P$ corresponde al error del periodo, $w_1$, $w_2$ y $w_3$ corresponden a los pesos sinápticos. Como se observa en la primera columna el perceptrón simple aprende la función OR en 4 épocas, lo cual se verifica en la columna del error, en la cual durante la cuarta época tiene un valor de cero.}
+
+\begin{table}[!htbp]
+\begin{center}
+\caption{Aprendizaje de la función OR mediante el uso de un perceptrón simple} \label{tabla2}
+\begin{footnotesize}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
+Época & P & $x_1$ & $x_2$ & $S^P$ & $h^P$ & $y^P$ & $e^P$ & $\delta^P$ & $w_1$ & $w_2$ & $w_3$ \\ \hline
+  1 & 1 & 0 & 0 & 0  & 1 & 0 & -1 & -1 & 0 & 0 & -1 \\
+  1 & 2 & 0 & 1 & -1 & 0 & 1 & 1  & 1  & 0 & 1 & 0 \\
+  1 & 3 & 1 & 0 & 0  & 1 & 1 & 0  & 0  & 0 & 1 & 0 \\
+  1 & 4 & 1 & 1 & 1  & 1 & 1 & 0  & 0  & 0 & 1 & 0 \\\hline
+  2 & 1 & 0 & 0 & 0  & 1 & 0 & -1 & -1 & 0 & 1 & -1 \\
+  2 & 2 & 0 & 1 & 0  & 1 & 1 & 0  & 0  & 0 & 1 & -1 \\
+  2 & 3 & 1 & 0 & -1 & 0 & 1 & 1  & 1  & 1 & 1 & 0 \\
+  2 & 4 & 1 & 1 & 2  & 1 & 1 & 0  & 0  & 1 & 1 & 0 \\\hline
+  3 & 1 & 0 & 0 & 0  & 0 & 0 & -1 & -1 & 1 & 1 & -1 \\
+  3 & 2 & 0 & 1 & 0  & 1 & 1 & 0  & 0  & 1 & 1 & -1 \\
+  3 & 3 & 1 & 0 & 0  & 1 & 1 & 0  & 0  & 1 & 1 & -1 \\
+  3 & 4 & 1 & 1 & 1  & 1 & 1 & 0  & 0  & 1 & 1 & -1 \\\hline
+  4 & 1 & 0 & 0 & -1 & 0 & 0 & 0  & 0  & 1 & 1 & -1 \\
+  4 & 2 & 0 & 1 & 0  & 1 & 1 & 0  & 0  & 1 & 1 & -1 \\
+  4 & 3 & 1 & 0 & 0  & 1 & 1 & 0  & 0  & 1 & 1 & -1 \\
+  4 & 4 & 1 & 1 & 1  & 1 & 1 & 0  & 0  & 1 & 1 & -1 \\
+  \hline
+\end{tabular}
+\end{footnotesize}
+\end{center}
+\end{table}
+
+
+Los formatos de las tablas deben ser consistentes durante el reporte. El uso de las tablas queda al criterio de quien realice el reporte, sin embargo, debe considerar que el objetivo de estas es organizar información para que el lector pueda interpretarla de una manera sencilla.  

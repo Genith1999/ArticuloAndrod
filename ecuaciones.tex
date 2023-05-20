@@ -1,0 +1,55 @@
+\subsection{Ecuaciones}
+
+En los reportes de ingeniería es común incluir ecuaciones para describir la solución a un problema o el comportamiento de un fenómeno.
+
+De preferencia, las ecuaciones deben ser escritas en algún software editor de textos matemáticos para que mantengan estética, y por lo tanto, sean fáciles de interpretar.
+
+Las ecuaciones deben encontrarse enumeradas, de manera que sea fácil ubicarlas al seguir el procedimiento descrito en el texto.
+
+Por ejemplo, la ecuación \ref{eqtn001} corresponde a la línea recta cuando se conocen dos puntos, $(x_1,y_1)$ y $(x_2,y_2)$, que pertenecen a la misma. A diferencia de las imágenes, las ecuaciones no necesitan una extrema descripción y tampoco deben ser todas citadas en el texto, sin embargo, es necesario que lleven una congruencia que pueda seguir el lector.
+
+\begin{equation}
+y - y_1  = \frac{{y_2  - y_1 }}{{x_2  - x_1 }}\left( {x - x_1 } \right)
+\label{eqtn001}
+\end{equation}
+
+Cuando se presenta un algoritmo o metodología, no es necesario citar todo el procedimiento a seguir, para evitar esto puede citarse la fuente de la que fue extraída el algoritmo o desarrollo matemático, y en el trabajo únicamente incluir las ecuaciones más significativas. Por ejemplo, de la ecuación \ref{eq59} a la ecuación \ref{eq65} se muestra el algoritmo para implementar el \emph{método de identificación de mínimos cuadrados recursivos}.
+
+\subsubsection{Algoritmo MMC recursivo\\}
+
+\begin{equation}
+g(t + 1) = C(t)z(t + 1)
+\label{eq59}
+\end{equation}
+
+\begin{equation}
+\alpha ^2 (t + 1) = \phi ^2  + z^T (t + 1)g(t + 1)
+\label{eq60}
+\end{equation}
+
+\begin{equation}
+\hat e(t + 1) = y(t + 1) - \hat P^T (t)z(t + 1)
+\label{eq61}
+\end{equation}
+
+\begin{equation}
+\hat P(t + 1) = \hat P(t) + \frac{1}{{\alpha ^2 (t + 1)}}g(t + 1)\hat e(t + 1)
+\label{eq62}
+\end{equation}
+
+\begin{equation}
+v(t + 1) = 1 + \phi ^2 v(t)
+\label{eq63}
+\end{equation}
+
+\begin{equation}
+\sigma ^2 (t + 1) = \frac{\phi }{{v(t + 1)}}\left[ {v(t)\hat \sigma ^2 (t) + \frac{1}{{\alpha ^2 (t + 1)}}\hat e(t + 1)\hat e^T (t + 1)} \right]
+\label{eq64}
+\end{equation}
+
+\begin{equation}
+C(t + 1) = \frac{1}{{\phi ^2 }}\left[ {C(t) - \frac{1}{{\alpha ^2 (t + 1)}}g(t + 1)g^T (t + 1)} \right]
+\label{eq65}
+\end{equation}
+
+El método puede verificarse en \cite{aguado}. Como se puede observar se presentan las ecuaciones en las que se basa el método, sin embargo es necesario explicar el desarrollo matemático que nos permite formular estas ecuaciones, ya que este ya ha sido desarrollado en la cita bibliográfica que se menciona.  
